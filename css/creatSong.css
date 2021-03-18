@@ -7,12 +7,13 @@ fieldset{
     background: white;
     border: 3px solid black;
     width: 700px;
-    color: black;
+    color: red;
 }
 legend{
     font-size: 30px;
     font-family: Arial;
     font-weight: bolder;
+    color: black;
 }
 .form-layout{
     display: flex;
@@ -21,12 +22,24 @@ legend{
 }
 input{
     width: 400px;
-    margin-right: 10px;
+    margin: 0px 10px 2px 15px;
 }
 .form-margin {
     margin: 5px;
 }
 input[name="button"]{
     margin: 20px;
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background: white;
+    border: 3px solid cyan;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: darkcyan;
+    color: white;
 }
 

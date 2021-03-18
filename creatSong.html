@@ -27,7 +27,7 @@
                     <input type="text" name="link" placeholder="Link">
                 </div>
                 <div class="form-margin">
-                    <input type="submit" value="Submit" name="button">
+                    <input class="button" type="submit" value="Submit" name="button">
                 </div>
             </div>
         </fieldset>
@@ -54,26 +54,28 @@
             },
             thumbnail: {
                 required: true,
+                url: true
             },
             link: {
-                required: true,
+                required:true,
+                url: true
             }
         },
         messages: {
             name: {
-                required: "Vui lòng nhập tên bài hát"
+                required: "Please enter name of the song"
             },
             singer: {
-                required: "Vui lòng nhập tên ca sĩ"
+                required: "Please enter singer"
             },
             author: {
-                required: "Vui lòng nhập tên tác giả"
+                required: "Please enter author"
             },
             thumbnail: {
-                required: "Vui lòng nhập link ảnh bài hát"
+                required: "Please enter pictures of song"
             },
             link: {
-                required: "Vui lòng nhập link bài hát"
+                required:"Please enter music"
             }
         }
     });
