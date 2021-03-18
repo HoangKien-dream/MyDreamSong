@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: cyan;
+    background-image:  linear-gradient(to right, cyan, dodgerblue);
+}
+img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+}
+fieldset{
+    background: white;
+    width: 50%;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+legend{
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.form-layout{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+    text-align: left;
+}
+.form-information{
+    width: 50%;
+    float: left;
+    margin: 20px 50px;
+}
+.form-marrgin{
+    margin: 1px 10px 5px;
+}
+.form-Username{
+    text-align: center;
+    margin: 5px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.form-title{
+    font-weight: bolder;
+    font-family: Tahoma;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    font-weight: bolder;
+    font-size: 20px;
+}

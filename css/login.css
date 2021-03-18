@@ -1,0 +1,44 @@
+body{
+    background-color: cyan;
+    background-image:  linear-gradient(to right, cyan, dodgerblue);
+}
+.form-layout{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+.msgError{
+    font-weight: bolder;
+}
+.form-padding {
+    margin: 5px;
+}
+fieldset{
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: red;
+}
+legend{
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+}
+input{
+    width: 500px;
+}
+input[name="button"]{
+    width: 510px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+.div-a{
+    text-align: center;
+    margin: 10px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    font-size: 20px;
+}

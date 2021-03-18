@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+    margin: 100px 20px 80px 20px;
+}
+.thunmbnail{
+    background-color: cyan;
+    background-image:  linear-gradient(to right, cyan, dodgerblue);
+    padding: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.tittle-list{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20px 0 20px 50px;
+    padding: 10px;
+}
+a{
+    color: gray;
+}
+.form-list{
+ border-radius: 20px;
+    border: 3px solid black;
+}
+.form-layout{
+    border:3px solid orange;
+    box-shadow: 2px 2px orange;
+    float: left;
+    width: 30%;
+    margin: 15px;
+    background-color: white;
+    text-align: center;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+    margin: 10px 0;
+}
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.author{
+    font-size: 20px;
+    font-weight: bolder;
+}

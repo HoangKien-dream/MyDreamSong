@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegisterForm</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div>
+    <form class="form-layout" action="#" name="register-form">
+        <fieldset style="width: 350px">
+            <legend>Create Account</legend>
+            <div>
+                <input type="text" class="form-padding" id="firtsName" name="firtsName" placeholder="Firts Name">
+            </div>
+            <div>
+                <input type="text" class="form-padding" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+            <div>
+                <input type="password" class="form-padding" id="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" class="form-padding" id="confirpsw" name="confirmPassword"
+                       placeholder="Confirm Password">
+                <div class="msgError" class="form-padding" id="msgError"></div>
+            </div>
+            <div>
+                <input type="text" class="form-padding" id="address" name="address" placeholder="Address">
+            </div>
+            <div>
+                <input type="text" class="form-padding" id="phone" name="phone" placeholder="Phone">
+            </div>
+            <div>
+                <input type="text" class="form-padding" id="avatar" name="avatar" placeholder="Avatar">
+            </div>
+            <div class="form-padding">
+                <label for="gender" style="font-weight: bolder">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="1">Nam</option>
+                    <option value="2">Nữ</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="email" name="email" class="form-padding" placeholder="Email">
+            </div>
+            <div>
+                <input type="text" id="birthday" name="birthday" class="form-padding" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="form-padding ">
+                <input type="submit" name="button" value="Submit">
+            </div>
+            <div class="div-a">
+                <a style="text-decoration-line: none" href="login.html">Login</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/register.js"></script>
+<script>
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("submitted!");
+        }
+    });
+    $("form[name=register-form]").validate({
+        rules: {
+            firtsName: {
+                required: true,
+                minlength: 5
+            },
+            lastName: {
+                 required:true,
+                minlength: 3
+            },
+         password:{
+                required: true,
+                minlength: 5
+         },
+            confirmPassword:{
+                required:true,
+                minlength:5,
+                equalTo: "#password"
+            },
+            address: {
+                required:true,
+                minlength:8
+            },
+            phone: {
+                required:true,
+                minlength:10,
+            },
+            avatar: {
+                required:true
+            },
+            email: {
+                required:true,
+            },
+            birthday: {
+                required:true
+            }
+
+        },
+        messages: {
+            firtsName: {
+                required: "Vui lòng nhập Firts Name",
+                minlength: "Vui lòng nhập ít nhất 5 ký tự"
+            },
+            lastName: {
+                required: "Vui lòng nhập Last Name",
+                minlength: "Vui lòng nhập ít nhất 3 ký tự"
+            },
+            password: {
+                required: "Vui lòng nhập Password",
+                minlength:"Vui lòng nhập ít nhất 5 ký tự"
+            },
+            confirmPassword: {
+                required: "Vui lòng nhập Confirm Password",
+                minlength: "Vui lòng nhập ít nhất 5 ký tự",
+                equalTo: "Vui lòng nhập đúng mật khẩu"
+            },
+            address: {
+                required: "Vui lòng nhập Address",
+                minlength: "Vui lòng nhập ít nhất 8 ký tự"
+            },
+            phone: {
+                required: "Vui lòng nhập Phone",
+                minlength: "Vui lòng nhập ít nhất 5 ký tự"
+            },
+            avatar: {
+                required: "Vui lòng nhập link ảnh đại diện"
+            },
+            email: {
+                required: "Vui lòng nhập Email"
+            },
+            birthday: {
+                required: "Vui lòng nhập Birthday"
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+body{
+    background-color: cyan;
+    background-image:  linear-gradient(to right, cyan, dodgerblue);
+}
+fieldset{
+    background: white;
+    border: 3px solid black;
+    width: 700px;
+    color: black;
+}
+legend{
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+.form-layout{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+input{
+    width: 400px;
+    margin-right: 10px;
+}
+.form-margin {
+    margin: 5px;
+}
+input[name="button"]{
+    margin: 20px;
+}
+

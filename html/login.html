@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<div class="form-layout">
+    <form action="#" name="form-login">
+        <fieldset>
+            <legend>Form Login</legend>
+            <div>
+                <input  class="form-padding" type="text" placeholder="Email" name="email" id="email">
+            </div>
+            <div>
+                <input class="form-padding" type="password" placeholder="Password" name="password">
+            </div>
+            <div>
+                <input class="form-padding" type="submit" value="Submit" name="button">
+            </div>
+            <div class="div-a">
+                <a style="text-decoration-line: none" href="register.html">Create new account</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script>
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("submitted!");
+        }
+    });
+    $("form[name=form-login]").validate({
+        rules: {
+            email:{
+                required:true
+            },
+            password: {
+                required: true
+            }
+        },
+        messages:{
+            email: {
+                required:"Vui lòng nhập Email"
+            },
+            password: {
+                required:"Vui lòng nhập Password"
+            }
+        }
+    });
+</script>
+<script src="../js/login.js"></script>
+</body>
+</html>

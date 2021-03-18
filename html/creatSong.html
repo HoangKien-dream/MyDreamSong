@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Song</title>
+    <link rel="stylesheet" href="../css/creatSong.css">
+</head>
+<body>
+<div class="form-layout">
+    <form action="#" name="form-creat-song">
+        <fieldset>
+            <legend>Creat Song</legend>
+            <div >
+                <div class="form-margin">
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-margin">
+                    <input type="text" name="singer" placeholder="Singer">
+                </div>
+                <div class="form-margin">
+                    <input type="text" name="author" placeholder="Author">
+                </div>
+                <div class="form-margin">
+                    <input type="text" name="thumbnail" placeholder="Thumbnail">
+                </div>
+                <div class="form-margin">
+                    <input type="text" name="link" placeholder="Link">
+                </div>
+                <div class="form-margin">
+                    <input type="submit" value="Submit" name="button">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script>
+    $.validator.setDefaults({
+        submitHandler: function () {
+            alert("submitted!");
+        }
+    });
+    $("form[name=form-creat-song]").validate({
+        rules: {
+            name: {
+                required: true
+            },
+            singer: {
+                required: true
+            },
+            author: {
+                required: true
+            },
+            thumbnail: {
+                required: true,
+            },
+            link: {
+                required: true,
+            }
+        },
+        messages: {
+            name: {
+                required: "Vui lòng nhập tên bài hát"
+            },
+            singer: {
+                required: "Vui lòng nhập tên ca sĩ"
+            },
+            author: {
+                required: "Vui lòng nhập tên tác giả"
+            },
+            thumbnail: {
+                required: "Vui lòng nhập link ảnh bài hát"
+            },
+            link: {
+                required: "Vui lòng nhập link bài hát"
+            }
+        }
+    });
+</script>
+<script src="../js/creatSong.js"></script>
+</body>
+</html>
