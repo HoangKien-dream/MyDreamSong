@@ -14,7 +14,7 @@ xhr.onreadystatechange = function () {
                   <div class="title">${responseObject[i].name}</div>
                   <img class="thumbanil" src="${responseObject[i].thumbnail}">
                   <div class="author">${responseObject[i].author}</div>
-                  <video controls="" autoplay="" name="media">
+                  <video controls=""  name="media">
                   <source src=${responseObject[i].link} type="audio/mpeg">
 </video>
 </div>`
