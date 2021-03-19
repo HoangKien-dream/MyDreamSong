@@ -9,7 +9,7 @@ xhr.onreadystatechange = function () {
             var responseObject = JSON.parse(this.responseText);
             console.log(this.responseText);
             alert(`Lấy thông tin thành công với người dùng có id là ${responseObject.id}`);
-         if (responseObject.gender = 1){
+         if (responseObject.gender === 1){
              responseObject.gender = "Nam";
              formInform.innerHTML = `<div>
          <div>
